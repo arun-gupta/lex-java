@@ -6,7 +6,7 @@ The request API is in `org.sample.aws.lex.request` package and the response API 
 
 == Install JAR locally
 
-This API JAR can be used in two ways:
+This API JAR can be installed in two ways:
 
 . Clone the repo and build the JAR file:
 
