@@ -15,15 +15,14 @@ This API JAR can be used in two ways:
 
 . Install the pre-built JAR to maven:
 
-    mvn install <ADD COMMAND>
-
-TODO: Publish the API to Maven Central
+    curl -O -L https://github.com/arun-gupta/lex-java/releases/download/0.1/lex-java-0.1.jar
+    mvn install:install-file -Dfile=./lex-java-0.1.jar -DgroupId=org.sample.aws.lex -DartifactId=lex-java -Dversion=0.1 -Dpackaging=jar
 
 == Maven depdendency
 
         <dependency>
             <groupId>org.sample.aws.lex</groupId>
             <artifactId>lex-java</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>0.1</version>
         </dependency>
 
