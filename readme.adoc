@@ -1,0 +1,29 @@
+= Lex Request/Response Java API
+
+This repository contains Java API for Lex request and response objects. The data model is defined at <ADD LINK>.
+
+The request API is in `org.sample.aws.lex.request` package and the response API is in `org.sample.aws.lex.response` package.
+
+== Install JAR locally
+
+This API JAR can be used in two ways:
+
+. Clone the repo and build the JAR file:
+
+    git clone https://github.com/arun-gupta/lex-java
+    mvn package
+
+. Install the pre-built JAR to maven:
+
+    mvn install <ADD COMMAND>
+
+TODO: Publish the API to Maven Central
+
+== Maven depdendency
+
+        <dependency>
+            <groupId>org.sample.aws.lex</groupId>
+            <artifactId>lex-java</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
