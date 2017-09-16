@@ -1,8 +1,10 @@
 = Lex Request/Response Java API
 
-This repository contains Java API for Lex request and response objects. The data model is defined at <ADD LINK>.
+This repository contains Java API for Lambda function input event and response format for Amazon Lex. The data model is defined at http://docs.aws.amazon.com/lex/latest/dg/lambda-input-response-format.html.
 
-The request API is in `org.sample.aws.lex.request` package and the response API is in `org.sample.aws.lex.response` package.
+This is in addition to the http://docs.aws.amazon.com/lex/latest/dg/programming-model.html[Lex model and runtime API] defined by the https://aws.amazon.com/sdk-for-java/[AWS Java SDK]. The model API allows to programmatically create bots, intent, and slot types. You can also use the model building API to manage, update, and delete resources for your bot. The runtime API is used to call a specific Amazon Lex bot to process utterances — user text or voice input.
+
+The input event API is in `org.sample.aws.lex.request` package and the response API is in `org.sample.aws.lex.response` package.
 
 == Install JAR locally
 
