@@ -18,6 +18,9 @@ public class LexRequest {
     String confirmationStatus;
     String inputTranscript;
 
+    public static final String INVOCATION_SOURCE_DIALOG_CODE_HOOK = "DialogCodeHook";
+    public static final String INVOCATION_SOURCE_FULFILLMENT_CODE_HOOK = "FulfillmentCodeHook";
+
     public String getMessageVersion() {
         return messageVersion;
     }

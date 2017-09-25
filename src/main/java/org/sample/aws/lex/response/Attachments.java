@@ -9,6 +9,15 @@ public class Attachments {
     String attachmentLinkUrl;
     Buttons[] buttons;
 
+    public Attachments() {
+    }
+
+    public Attachments(String title, String subTitle, Buttons[] buttons) {
+        this.title = title;
+        this.subTitle = subTitle;
+        this.buttons = buttons;
+    }
+
     public String getTitle() {
         return title;
     }

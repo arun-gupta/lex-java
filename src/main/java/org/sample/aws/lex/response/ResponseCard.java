@@ -7,6 +7,15 @@ public class ResponseCard {
     String contentType;
     Attachments[] genericAttachments;
 
+    public ResponseCard() {
+    }
+
+    public ResponseCard(int version, String contentType, Attachments[] genericAttachments) {
+        this.version = version;
+        this.contentType = contentType;
+        this.genericAttachments = genericAttachments;
+    }
+
     public int getVersion() {
         return version;
     }

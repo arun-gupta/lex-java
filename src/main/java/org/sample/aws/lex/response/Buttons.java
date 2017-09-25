@@ -4,6 +4,14 @@ public class Buttons {
     String text;
     String value;
 
+    public Buttons() {
+    }
+
+    public Buttons(String text, String value) {
+        this.text = text;
+        this.value = value;
+    }
+
     public String getText() {
         return text;
     }

@@ -8,9 +8,15 @@ public class LexResponse {
     Map<String, String> sessionAttributes;
     private DialogAction dialogAction;
 
-    public LexResponse(DialogAction dialogAction) {
+    public LexResponse() { }
 
+    public LexResponse(DialogAction dialogAction) {
         this.dialogAction = dialogAction;
+    }
+
+    public LexResponse(DialogAction dialogAction, Map<String, String> sessionAttributes) {
+        this(dialogAction);
+        this.sessionAttributes = sessionAttributes;
     }
 
     public DialogAction getDialogAction() {
@@ -24,11 +30,4 @@ public class LexResponse {
     public void setSessionAttributes(Map<String, String> sessionAttributes) {
         this.sessionAttributes = sessionAttributes;
     }
-
-    public static final LexResponse getLexResponse(String speechText, String title) {
-        Message message = new Message("PlainText", speechText);
-        DialogAction dialogAction = new DialogAction("Close", "Fulfilled", message);
-        return new LexResponse(dialogAction);
-    }
-
 }
